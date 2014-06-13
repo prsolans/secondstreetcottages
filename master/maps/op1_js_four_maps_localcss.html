@@ -1,0 +1,226 @@
+<html>
+<head>
+	<title>
+		OpenAPI Sample - Four Maps skinnable
+	</title>
+
+    <script src="http://web.openapi.mapquest.com/oapi/transaction?request=script&key=YourKey"  type="text/javascript"></script>
+
+     <link id="localcss1" rel="stylesheet" href="./css/blue_frame_2map_firstmap.css" type="text/css" charset="iso-8859-1"/>
+	 <link id="localcss2" rel="stylesheet" href="./css/blue_frame_2map_secondmap.css" type="text/css" charset="iso-8859-1"/>
+	 <link id="localcss3" rel="stylesheet" href="./css/blue_frame_2map_thirdmap.css" type="text/css" charset="iso-8859-1"/>
+	 <link id="localcss4" rel="stylesheet" href="./css/blue_frame_2map_fourthmap.css" type="text/css" charset="iso-8859-1"/>
+
+	<script type="text/javascript">
+		function changeSkin1()
+		{
+		  var skin_id = document.getElementById('skin1');
+		  var skin_color = skin_id.options[skin_id.options.selectedIndex].value;
+		  var localcss = document.getElementById('localcss1');
+		  localcss.href="./css/"+skin_color+"_frame_2map_firstmap.css";
+		}
+
+		function changeSkin2()
+		{		  var skin_id = document.getElementById('skin2');
+		  var skin_color = skin_id.options[skin_id.options.selectedIndex].value;
+		  var localcss = document.getElementById('localcss2');
+		  localcss.href="./css/"+skin_color+"_frame_2map_secondmap.css";
+		}
+
+		function changeSkin3()
+		{
+		  var skin_id = document.getElementById('skin3');
+		  var skin_color = skin_id.options[skin_id.options.selectedIndex].value;
+		  var localcss = document.getElementById('localcss3');
+		  localcss.href="./css/"+skin_color+"_frame_2map_thirdmap.css";
+		}
+
+		function changeSkin4()
+		{
+		 var skin_id = document.getElementById('skin4');
+		  var skin_color = skin_id.options[skin_id.options.selectedIndex].value;
+		  var localcss = document.getElementById('localcss4');
+		  localcss.href="./css/"+skin_color+"_frame_2map_fourthmap.css";
+		}
+
+	</script>
+</head>
+
+
+<body style="background-color:rgb(244, 246, 229)" id='body'>
+
+<DIV style="width:700px">
+	<div style="float:left;width:300px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+	<div style="float:left;padding-top:8px;">
+	<b>Choose First Skin:</b>
+	</div>
+	<div style="float:left;width:150px;float:right;padding-top:5px;">
+			<select name="skin1" id="skin1" value="select a skin" onChange="changeSkin1()" style="width:150px;">
+				<option value='red'>Red</option>
+				<option value='green'>Green</option>
+				<option value='blue' selected>Blue</option>
+			</select>
+		</div>
+	</div>
+
+	<div style="float:right;width:300px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+		<div style="float:left; padding-top:8px;">
+		<b>Choose Second Skin:</b>
+		</div>
+		<div style="width:150px;float:right;padding-top:5px;">
+			<select name="skin2" id="skin2" value="select a skin" onChange="changeSkin2()" style="width:150px;">
+				<option value='red'>Red</option>
+				<option value='green'>Green</option>
+				<option value='blue' selected>Blue</option>
+			</select>
+		</div>
+	</div>
+</DIV>
+<DIV style="width:700px">
+	<div style="float:left;width:300px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+	<div style="float:left; padding-top:8px;">
+	<b>Choose Third Skin:</b>
+	</div>
+	<div style="width:150px;float:right;padding-top:5px;">
+			<select name="skin3" id="skin3" value="select a skin" onChange="changeSkin3()" style="width:150px;">
+				<option value='red'>Red</option>
+				<option value='green'>Green</option>
+				<option value='blue' selected>Blue</option>
+			</select>
+		</div>
+	</div>
+
+	<div style="float:right;width:300px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+		<div style="float:left; padding-top:8px;">
+		<b>Choose Fourth Skin:</b>
+		</div>
+		<div style="width:150px;float:right;padding-top:5px;">
+			<select name="skin4" id="skin4" value="select a skin" onChange="changeSkin4()" style="width:150px;">
+				<option value='red'>Red</option>
+				<option value='green'>Green</option>
+				<option value='blue' selected>Blue</option>
+			</select>
+		</div>
+	</div>
+</DIV>
+
+
+<DIV style="width:1100px" >
+		<div id='myMap1' class='myMap' style="float:left;height:400;width:450"></div>
+		<div style="float:left;width:200px"></div>
+		<div id='myMap2' class='myMap' style="float:right;height:400;width:450"></div>
+	</DIV>
+<DIV style="width:1100px" >
+		<div id='myMap3' class='myMap' style="float:left;height:400;width:450"></div>
+		<div style="float:left;width:200px"></div>
+		<div id='myMap4' class='myMap' style="float:right;height:400;width:450"></div>
+	</DIV>
+</TABLE>
+
+
+	<SCRIPT type="text/javascript" >
+	mq1 = new MQMap("myMap1");
+
+	var loc1 = new MQLocation();
+	loc1.setName("poi1");
+	loc1.setAddress("122 n plum st");
+	loc1.setCity("Lancaster");
+	loc1.setStateProvince("PA");
+	loc1.setPostalCode("17602");
+	loc1.setIconSource("./images/ballred.gif");
+	mq1.locations.add(loc1);
+
+	var loc2 = new MQLocation();
+	loc2.setName("poi2");
+	loc2.setAddress("1023 Donegal Springs Rd");
+	loc2.setCity("Mount Joy");
+	loc2.setStateProvince("PA");
+	loc2.setIconSource("./images/ballyellow.gif");
+	mq1.locations.add(loc2);
+
+	var loc3 = new MQLocation();
+	loc3.setName("poi3");
+	loc3.setAddress("455 State St.");
+	loc3.setCity("Enola");
+	loc3.setStateProvince("PA");
+	loc3.setIconSource("./images/violet0.gif");
+	mq1.locations.add(loc3);
+	mq1.getMap();
+	</SCRIPT>
+
+	<SCRIPT type="text/javascript">
+	mq3 = new MQMap("myMap3");
+
+	var loc31 = new MQLocation();
+	loc31.setName("poi1");
+	loc31.setAddress("1815 JFK Blvd");
+	loc31.setCity("Philadelphia");
+	loc31.setStateProvince("PA");
+	loc31.setPostalCode("19103");
+	loc31.setIconSource("./images/ballred.gif");
+	mq3.locations.add(loc31);
+
+	var loc32 = new MQLocation();
+	loc32.setName("poi2");
+	loc32.setAddress("State Hill Road");
+	loc32.setCity("Reading");
+	loc32.setStateProvince("PA");
+	loc32.setIconSource("./images/ballyellow.gif");
+	mq3.locations.add(loc32);
+	mq3.getMap();
+	</SCRIPT>
+
+	<SCRIPT type="text/javascript">
+	mq2 = new MQMap("myMap2");
+
+	var loc21 = new MQLocation();
+	loc21.setName("poi1");
+	loc21.setAddress("1815 JFK Blvd");
+	loc21.setCity("Philadelphia");
+	loc21.setStateProvince("PA");
+	loc21.setPostalCode("19103");
+	loc21.setIconSource("./images/ballred.gif");
+	mq2.locations.add(loc21);
+
+	var loc22 = new MQLocation();
+	loc22.setName("poi2");
+	loc22.setAddress("State Hill Road");
+	loc22.setCity("Reading");
+	loc22.setStateProvince("PA");
+	loc22.setIconSource("./images/ballyellow.gif");
+	mq2.locations.add(loc22);
+	mq2.getMap();
+	</SCRIPT>
+
+	<SCRIPT type="text/javascript" >
+	mq4 = new MQMap("myMap4");
+
+	var loc41 = new MQLocation();
+	loc41.setName("poi1");
+	loc41.setAddress("122 n plum st");
+	loc41.setCity("Lancaster");
+	loc41.setStateProvince("PA");
+	loc41.setPostalCode("17602");
+	loc41.setIconSource("./images/ballred.gif");
+	mq4.locations.add(loc41);
+
+	var loc42 = new MQLocation();
+	loc42.setName("poi2");
+	loc42.setAddress("1023 Donegal Springs Rd");
+	loc42.setCity("Mount Joy");
+	loc42.setStateProvince("PA");
+	loc42.setIconSource("./images/ballyellow.gif");
+	mq4.locations.add(loc42);
+
+	var loc43 = new MQLocation();
+	loc43.setName("poi3");
+	loc43.setAddress("455 State St.");
+	loc43.setCity("Enola");
+	loc43.setStateProvince("PA");
+	loc43.setIconSource("./images/violet0.gif");
+	mq4.locations.add(loc43);
+
+	mq4.getMap();
+	</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<head>
+
+    <script src="http://web.openapi.mapquest.com/oapi/transaction?request=script&key=mjtd%7Clu6t2l0zl9%2C8w%3Do5-g4bnq "  type="text/javascript"></script>
+	<title>OpenAPI Sample - Geocoding</title>
+</head>
+
+<body id="body">
+
+<br/><br/>
+<div id="activeLoc" style="position:absolute; left: 50;"></div>
+<br/><br/>
+<div id="mapper1" class="mapper1" style="height: 500px; width: 500px; "></div>
+<div id="geoCodeList" class="GeocodeLoc" style="position:absolute; left: 600; top: 100;">
+<h3>The geocoded address is: <i>144 North Second Street, Ashland OR</i></h3><br/><br/>
+</div>
+
+<script>
+    var geo;
+
+    function displayMappedLocation(location){
+       var linkDesc = location.getAddress()+", "+location.getCity()+", "+location.getStateProvince()+", "+location.getPostalCode();
+       document.getElementById('activeLoc').innerHTML = "<h3>Mapped Address: <i>"+linkDesc+"</i></h3>";
+    }
+
+    function getMapForLoc(aLink)
+    {
+       var targ;
+       mq.locations.removeAll();
+       var loc = geo.locations.getAt(aLink);
+       mq.locations.add(loc);
+       displayMappedLocation(loc);
+   	   mq.getMap();
+    }
+
+    function formListLocs(geocode)
+	{
+      geo = geocode;
+	  divObj = document.getElementById('geoCodeList');
+
+	  for(var i=0;i<geocode.locations.getSize();i++){
+	    var loc = geocode.locations.getAt(i);
+	    var linkDesc = loc.getAddress()+", "+loc.getCity()+", "+loc.getStateProvince()+", "+loc.getPostalCode();
+		divObj.innerHTML += "<a id="+i+" href='javascript:getMapForLoc("+i+")'>"+ linkDesc +"</a>";
+		divObj.innerHTML += "<br/><br/>";
+	  }
+	  document.getElementById('body').appendChild(divObj);
+	}
+
+    function done(geocode)
+	{
+	    formListLocs(geocode);
+	    if (!mq)
+	    	mq = new MQMap("mapper1");
+	    mq.locations.add(geocode.locations.getAt(0));
+	    displayMappedLocation(geocode.locations.getAt(0));
+	    mq.getMap();
+	}
+
+    var mq = null;
+	var mqg = new MQGeocode();
+
+	var loc4 = new MQLocation();
+	loc4.setAddress("144 N 2nd St");
+	loc4.setCity("Ashland");
+	loc4.setStateProvince("OR");
+
+	mqg.doGeocode(loc4,"done");
+
+</script>
+
+</body></html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+   <script src="http://web.openapi.mapquest.com/oapi/transaction?request=script&key=YourKey"  type="text/javascript"></script>
+
+   <link rel="stylesheet" href="./css/routecontent.css" type="text/css" media="screen, projection, print" />
+   <title>
+      OpenAPI Sample - Routing
+   </title>
+
+<SCRIPT>
+  var popUpWindow = null;
+  function newWindowStatePop(statefield)
+  {
+  	var form = document.getElementById("ddform");
+
+    form.elements.namedItem("stateField").value = statefield;
+
+    if(popUpWindow==null )
+    {
+      popUpWindow=window.open('statePopup.html','subWindow','scrollbars=1,resizable=1,height=550,width=250,left=10');
+      popUpWindow.focus();
+      popUpWindow=null;
+    }
+  }
+
+</SCRIPT>
+
+</head>
+
+<body id='body'>
+
+   <script type="text/javascript">
+
+		var mqRoute = null;
+
+		function changeManeuverColor (obj,number) {
+		   var index = obj.selectedIndex;
+           var strColor1 = obj.options[index].value;
+           mqRoute.setManeuverColor(number,strColor1);
+		}
+
+		function doSubmit()
+		{
+			mqRoute = new MQRoute("container");
+
+			var form = document.getElementById("ddform");
+
+			var thumbSize = new MQSize();
+			thumbSize.setHeight(150);
+			thumbSize.setWidth(300);
+
+			var overviewSize = new MQSize();
+			overviewSize.setHeight(400);
+			overviewSize.setWidth(600);
+
+			mqRoute.primaryMapSize = overviewSize;
+
+			mqRoute.origin.setAddress(form.elements.namedItem("1a").value);
+			mqRoute.origin.setCity(form.elements.namedItem("1c").value);
+			mqRoute.origin.setStateProvince(form.elements.namedItem("1s").value);
+			mqRoute.origin.setPostalCode(form.elements.namedItem("1z").value);
+			mqRoute.origin.setName("orig");
+
+			mqRoute.destination.setAddress(form.elements.namedItem("2a").value);
+			mqRoute.destination.setCity(form.elements.namedItem("2c").value);
+			mqRoute.destination.setStateProvince(form.elements.namedItem("2s").value);
+			mqRoute.destination.setPostalCode(form.elements.namedItem("2z").value);
+			mqRoute.destination.setName("dest");
+
+			mqRoute.doRoute("routeReturn");
+		}
+
+		function routeReturn(mqRoute, status) {
+   	    }
+
+	</script>
+
+	<div class="mqClear">
+		<form id="ddform" name="ddform" action="javascript:doSubmit();" class="mqDefault" title="Get Directions">
+
+			<input type="hidden" name="go" value="1" />
+			<input type="hidden" name="do" value="nw" />
+			<input type="hidden" name="rmm" value="1" />
+			<input type="hidden" name="un" value="m" />
+
+			<input type="hidden" name="cl" value="EN" />
+			<input type="hidden" name="ct" value="NA" />
+			<input type="hidden" name="rsres" value="1" />
+
+
+			<input type="hidden" name="n1" value="" />
+			<input type="hidden" name="n2" value="" />
+			<input type="hidden" name="map" value="y" />
+			<input type="hidden" name="thumb" value="" />
+
+			<input type="hidden" name="stateField" id="stateField" value="">
+
+			<div class="mqMain">
+				<div class="mqBgacrv">
+					<h2><img border="0" src="http://cdn.mapquest.com/mqsite/icon-dirs-start" width="32px" height="17px" alt="Start"/> Starting Address</h2>
+				</div>
+				<div class="mqPanel mqBgdirs">
+					<fieldset>
+						<input type="hidden" name="1y" value="US" />
+
+						<div><label for="a1" class="mqAddyform">Address or Intersection (optional)</label></div>
+
+						<div><input type="text" name="1a" id="a1" class="mqAddress" tabindex="2" accesskey="x" value="122 n plum st" /></div>
+						<div class="mqCsz mqClear">
+						<div class="mqDcity"><label for="c1">City</label></div>
+						<div class="mqDstate"><label for="s1"><a tabindex="100" href="JavaScript:newWindowStatePop('start')" class="mqLink">State</a></label></div>
+						<div class="mqDzip"><label for="z1">ZIP Code</label></div>
+
+						</div>
+						<div class="mqCsz mqClear">
+
+						<div class="mqDcity"><input type="text" name="1c" id="c1" tabindex="4" value="Lancaster" /></div>
+						<div class="mqDstate"><input type="text" name="1s" id="s1" tabindex="6" maxlength="2" value="PA" /></div>
+						<div class="mqDzip"><input type="text" name="1z" id="z1" tabindex="8" maxlength="10" value="17602" /></div>
+						</div>
+					</fieldset>
+				</div><!--//panel-->
+			</div><!--//main-->
+
+			<div class="mqSide">
+				<div class="mqWell">
+					<div class="mqBgacrv">
+					<h2><img border="0" src="http://cdn.mapquest.com/mqsite/icon-dirs-end" width="32px" height="17px" alt="Start"/> Ending Address</h2>
+					</div>
+					<div class="mqPanel mqBgdirs">
+					<fieldset>
+						<input type="hidden" name="2y" value="US" />
+						<div><label for="a2" class="mqAddyform">Address or Intersection (optional)</label></div>
+						<div><input type="text" name="2a" id="a2" class="mqAddress" tabindex="10"  value="455 State St." /></div>
+							<div class="mqCsz mqClear">
+							<div class="mqDcity"><label for="c2">City</label></div>
+							<div class="mqDstate"><label for="s2"><a tabindex="100" href="JavaScript:newWindowStatePop('end')" class="mqLink">State</a></label></div>
+							<div class="mqDzip"><label for="z2">ZIP Code</label></div>
+						</div>
+						<div class="mqCsz mqClear">
+							<div class="mqDcity"><input type="text" name="2c" id="c2" tabindex="12" value="Enola" /></div>
+							<div class="mqDstate"><input type="text" name="2s" id="s2" tabindex="14" maxlength="2" value="PA" /></div>
+							<div class="mqDzip"><input type="text" name="2z" id="z2" tabindex="16" maxlength="10" value="" /></div>
+						</div>
+					</fieldset>
+					<div class="mqDsubmit">
+					<input type="submit" id="submit1" value="Get Directions" tabindex="20"/>
+					</div>
+					</div><!--//panel-->
+				</div><!--//well-->
+			</div><!--//side-->
+		</form>
+	</div><!--//clear-->
+
+
+	<div style="width:300px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+		<div style="float:left; padding-top:8px;">
+			<b>Choose First Skin:</b>
+		</div>
+		<div style="width:150px;float:right;padding-top:5px;">
+			<select name="maneuver1" id="maneuver1" value="select a maneuver skin" onChange="changeManeuverColor(this,'odd')" style="width:150px;">
+			<option value='light_yellow' selected>Light Yellow</option>
+			<option value='light_green'>Light Green</option>
+			<option value='light_blue'>Light Blue</option>
+			</select>
+		</div>
+	</div>
+
+	<br/>
+	<div style="width:300px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+		<div style="float:left; padding-top:8px;">
+			<b>Choose Second Skin:</b>
+		</div>
+		<div style="width:150px;float:right;padding-top:5px;">
+			<select name="maneuver2" id="maneuver2" value="select a maneuver skin" onChange="changeManeuverColor(this,'even')" style="width:150px;">
+			<option value='light_grey' selected>Light Grey</option>
+			<option value='light_orange'>Light Orange</option>
+			<option value='light_rose'>Light Rose</option>
+			</select>
+		</div>
+	</div>
+
+	<div id='container' class='mqContainer' style='height:400px;width:600px'></div>
+
+</body>
+</html>

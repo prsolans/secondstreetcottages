@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>
+		OpenAPI Sample - Override default skin
+	</title>
+
+	<script src="http://web.openapi.mapquest.com/oapi/transaction?request=script&key=YourKey"  type="text/javascript"></script>
+
+  	<link id="localcss" rel="stylesheet" href="./css/blue_frame.css" type="text/css" charset="iso-8859-1"/>
+	<script type="text/javascript">
+	function changeSkin()
+	{
+
+	  var skin_id = document.getElementById('skin');
+	  var index = skin_id.options.selectedIndex;
+	  var skin_color = skin_id.options[index].value;
+	  var localcss = document.getElementById('localcss');
+	  localcss.href="./css/"+skin_color+"_frame.css";
+
+	}
+	</script>
+</head>
+
+<body style="background-color:white" id='body'>
+
+<div style="width:175px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+  <div style="float:left; padding-top:8px;">
+	 <b>Choose Skin:</b>
+  </div>
+ <div style="width:75px;float:right;padding-top:5px;">
+	<select name="skin" id="skin" value="select a skin" onChange="changeSkin()" style="width:70px;">
+		<option value='red'>Red</option>
+		<option value='green'>Green</option>
+		<option value='blue' selected>Blue</option>
+	</select>
+ </div>
+</div>
+
+
+<div id='myMap' class='myMap' style="height:500;width:700"></div>
+
+<script type="text/javascript">
+
+	var mq = new MQMap("myMap");
+
+	var loc1 = new MQLocation();
+	loc1.setName("poi1");
+	loc1.setAddress("122 n plum st");
+	loc1.setCity("Lancaster");
+	loc1.setStateProvince("PA");
+	loc1.setPostalCode("17602");
+	loc1.setIconSource("./images/ballred.gif");
+	mq.locations.add(loc1);
+
+	var loc2 = new MQLocation();
+	loc2.setName("poi2");
+	loc2.setAddress("1023 Donegal Springs Rd");
+	loc2.setCity("Mount Joy");
+	loc2.setStateProvince("PA");
+	loc2.setIconSource("./images/ballred.gif");
+	mq.locations.add(loc2);
+
+	var loc3 = new MQLocation();
+	loc3.setName("poi3");
+	loc3.setAddress("455 State St.");
+	loc3.setCity("Enola");
+	loc3.setStateProvince("PA");
+	loc3.setIconSource("./images/ballred.gif");
+	mq.locations.add(loc3);
+
+	mq.getMap();
+
+</script>
+
+</body>
+
+</html>

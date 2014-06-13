@@ -1,0 +1,124 @@
+/**
+ * CSS Stylesheet
+*/
+
+body {
+font-family: "Garamond", "Georgia", "Palatino", serif;
+color: #FFFFFF;
+font-weight:bold;
+font-size: 14pt;
+background-image:url(/images/page_tanback.gif);
+
+}
+
+.normal{
+text-align:center;
+}
+
+.container {
+width:980px; 
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+
+.header 
+{
+width: 100%;
+height:100px;
+z-index: 11;
+}
+
+.main {
+width: 930px;
+height: 700px;
+text-align: left;
+background-image:url(/images/body-bg.gif);
+background-repeat:repeat-y;
+padding: 21px 21px 7px 29px;
+}
+
+.main p{
+font-size: 14pt;
+padding-bottom: 15px;
+}
+
+.homepage p{
+
+padding-bottom: 15px;
+}
+
+.main-left{
+float: left; 
+width: 300px; 
+}
+
+.main-left img {
+width: 296px;
+}
+
+.main-left-menu{
+float: left;
+width: 282px;
+height: 600px;
+background-image:url(/images/main_menu_left_background.jpg);
+background-repeat: no-repeat;
+
+color: #FFFFFF;
+padding: 15px 7px 7px 11px;
+}
+
+.main-left-menu img {
+width: auto;
+}
+
+.main-right {
+float: right; 
+width: 605px; 
+/*padding: 23px 11px 5px 11px;*/
+}
+
+p .main-right {
+padding-left: 25px;
+}
+
+.footer 
+{
+width: 980px;
+height:22px;
+z-index: 1;
+background-image:url(/images/footer3.gif);
+background-repeat:no-repeat;
+
+text-align:right;
+vertical-align: top;
+color: violet;
+margin-right: 22px;
+
+}
+
+a:link, a:active, a:visited {
+color: violet;
+font-weight: bold;
+text-decoration: none;
+}
+
+img {
+border: 0px;
+}
+
+h1 {
+font-size: 24px;
+color: plum;
+}
+
+h2 {
+font-size: 20px;
+}
+
+.caption
+{
+font-style:italic;
+font-size:14px;
+text-align:center;
+}

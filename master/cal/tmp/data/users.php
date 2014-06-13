@@ -1,0 +1,1 @@
+<?a:2:{s:2:"re";a:3:{s:3:"pwd";s:2:"re";s:5:"group";s:4:"user";s:6:"access";s:1:"1";}s:5:"admin";a:3:{s:3:"pwd";s:4:"demo";s:5:"group";s:4:"main";s:6:"access";s:1:"1";}}?>

@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<script src="http://web.openapi.mapquest.com/oapi/transaction?request=script&key=mjtd%7Clu6t2l0zl9%2C8w%3Do5-g4bnq"  type="text/javascript"></script>
+
+<title>
+	OpenAPI Sample - Single Map
+</title>
+
+
+</head>
+
+<body style="background-color:rgb(244, 246, 229)" id='body' >
+
+<br>
+
+
+<div id='myMap' class='myMap' style="height:550;width:550">
+</div>
+
+<script type="text/javascript">
+	var mq = new MQMap("myMap");
+
+	var loc1 = new MQLocation();
+	loc1.setName("poi1");
+	loc1.setAddress("144 N Second Street");
+	loc1.setCity("Ashland");
+	loc1.setStateProvince("OR");
+	loc1.setPostalCode("97520");
+	//loc1.setIconSource("./images/ballred.gif");
+	loc1.setIconId(244);
+	mq.locations.add(loc1);
+
+	var loc2 = new MQLocation();
+	loc2.setName("poi2");
+	loc2.setAddress("1023 Donegal Springs Rd");
+	loc2.setCity("Mount Joy");
+	loc2.setStateProvince("PA");
+	loc2.setIconSource("./images/ballyellow.gif");
+	mq.locations.add(loc2);
+
+	var loc3 = new MQLocation();
+	loc3.setName("poi3");
+	loc3.setAddress("455 State St.");
+	loc3.setCity("Enola");
+	loc3.setStateProvince("PA");
+	loc3.setIconSource("./images/violet0.gif");
+	mq.locations.add(loc3);
+
+	mq.setRolloverPopups(false);//To disable the popups
+
+	mq.getMap();
+
+
+</script>
+</body>
+</html>

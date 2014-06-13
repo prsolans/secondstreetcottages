@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<script src="http://web.openapi.mapquest.com/oapi/transaction?request=script&key=YourKey"  type="text/javascript"></script>
+
+<title>
+	OpenAPI Sample - Skins
+</title>
+
+
+</head>
+
+<body style="background-color:rgb(244, 246, 229)" id='body' >
+<br>
+
+<div style="width:150px;height:30px; background-color:rgb(244, 246, 229);border:1px solid black;margin-left: 5px; padding-left:5px;">
+	<div style="float:left; padding-top:8px;">
+		<b>Choose Skin:</b>
+	</div>
+		<div style="width:75px;float:right;padding-top:5px;">
+			<select name="skin" id="skin" value="select a skin" onChange="mq.setSkin(this.options[this.selectedIndex].value)" style="width:70px;">
+			<option value='red'>Red</option>
+			<option value='green'>Green</option>
+			<option value='blue' selected>Blue</option>
+			</select>
+		</div>
+</div>
+
+
+
+<div id='myMap' class='myMap' style="height:600;width:650">
+</div>
+
+<script type="text/javascript">
+	var mq = new MQMap("myMap");
+
+	var loc1 = new MQLocation();
+	loc1.setName("poi1");
+	loc1.setAddress("122 n plum st");
+	loc1.setCity("Lancaster");
+	loc1.setStateProvince("PA");
+	loc1.setPostalCode("17602");
+	loc1.setIconSource("./images/ballred.gif");
+	mq.locations.add(loc1);
+
+	var loc2 = new MQLocation();
+	loc2.setName("poi2");
+	loc2.setAddress("1023 Donegal Springs Rd");
+	loc2.setCity("Mount Joy");
+	loc2.setStateProvince("PA");
+	loc2.setIconSource("./images/ballyellow.gif");
+	mq.locations.add(loc2);
+
+	var loc3 = new MQLocation();
+	loc3.setName("poi3");
+	loc3.setAddress("455 State St.");
+	loc3.setCity("Enola");
+	loc3.setStateProvince("PA");
+	loc3.setIconSource("./images/violet0.gif");
+	mq.locations.add(loc3);
+
+	mq.getMap();
+
+
+</script>
+</body>
+</html>

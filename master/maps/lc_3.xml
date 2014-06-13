@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<locationCollection count="4" >
+   <location>
+      <name>poi_1</name>
+      <address>122 n plum st</address>
+      <city>Lancaster</city>
+      <county></county>
+      <stateProvince>PA</stateProvince>
+      <postalCode>17602</postalCode>
+      <country></country>
+      <iconId>250</iconId>
+   </location>
+   <location>
+      <name>poi_2</name>
+      <address>1223 Donegal Springs Rd</address>
+      <city>Mount Joy</city>
+      <county></county>
+      <stateProvince>PA</stateProvince>
+      <postalCode></postalCode>
+      <country></country>
+      <iconId>244</iconId>
+   </location>   
+   <location>
+      <name>poi_3</name>
+      <address>455 State St.</address>
+      <city>Enola</city>
+      <county></county>
+      <stateProvince>PA</stateProvince>
+      <postalCode></postalCode>
+      <country></country>
+      <iconId></iconId>
+   </location>
+   <location>
+      <name>poi_4</name>
+      <address>4031 Columbia Ave.</address>
+      <city>Columbia</city>
+      <county></county>
+      <stateProvince>PA</stateProvince>
+      <postalCode></postalCode>
+      <country>US</country>
+      <iconId>249</iconId>
+   </location>
+</locationCollection>
