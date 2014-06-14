@@ -7,7 +7,7 @@ font-family: "Garamond", "Georgia", "Palatino", serif;
 color: #FFFFFF;
 font-weight:bold;
 font-size: 14pt;
-background-image:url(images/page_tanback.gif);
+background-image:url(../../images/page_tanback.gif);
 
 }
 
@@ -33,7 +33,7 @@ z-index: 11;
 width: 930px;
 height: 700px;
 text-align: left;
-background-image:url(images/body-bg.gif);
+background-image:url(../../images/body-bg.gif);
 background-repeat:repeat-y;
 padding: 21px 21px 7px 29px;
 }
@@ -61,7 +61,7 @@ width: 296px;
 float: left;
 width: 282px;
 height: 600px;
-background-image:url(images/main_menu_left_background.jpg);
+background-image:url(../../images/main_menu_left_background.jpg);
 background-repeat: no-repeat;
 
 color: #FFFFFF;
@@ -87,7 +87,7 @@ padding-left: 25px;
 width: 980px;
 height:22px;
 z-index: 1;
-background-image:url(images/footer3.gif);
+background-image:url(../../images/footer3.gif);
 background-repeat:no-repeat;
 
 text-align:right;
