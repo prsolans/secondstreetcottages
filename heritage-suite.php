@@ -40,42 +40,6 @@ include("master/includes/meta.inc.php");
 	  </div></div>
 	<div class="main-right">
 	  <img src="images/hd_heritage.jpg" alt="Heritage Suite - Second Street Cottages, Ashland, OR" />
-	  <!--<p> <?php
-			
-				$directory = "../images/db_images";
-				
-				// HERITAGE SUITE == 1
-				$pid = "1";
-				
-				$images = "SELECT * FROM images WHERE enabled = 'yes' AND propertynumber = '$pid' ORDER BY imgorder;";				
-				$image_query = mysql_query($images);				
-				
-				$preferred = "SELECT * FROM images WHERE enabled = 'yes' AND propertynumber = $pid ORDER BY imgorder ASC LIMIT 1;";
-				$preferred_query = mysql_query($preferred);		
-				
-			
-				while  ($pref_row = mysql_fetch_array($preferred_query)) {
-					
-					$featheight = "";
-					$featwidth = "width=\"285px\"";
-					$src = "{$directory}/{$pref_row[filename]}";
-					$alt = "{$pref_row[filename]}";
-					$name = "featuredimage";
-					$id = "toppic";
-					echo "<div style='float: right; padding: 15px 7px 7px 9px;';><a href=\"{$src}\" class='thickbox' rel='gallery-{$pid}' title='Click to view more pictures'><img src=\"{$src}\" alt=\"{$alt}\" {$featwidth} name=\"{$name}\" id=\"{$id}\" /></a><br/><span class='caption'>Click to view more pictures</span></div>";
-				}				
-				
-					echo "<div style='visibility: hidden;'>";
-				while  ($image_row = mysql_fetch_array($image_query)) {
-					$height = "height=\"1px\"";
-					$width = "";
-					echo "<a href=\"{$directory}/{$image_row[filename]}\" class='thickbox' rel='gallery-{$pid}'  title='{$row['address1']}'><img src=\"{$directory}/{$image_row[filename]}\" alt=\"{$image_row[filename]}\" {$height} {$width} name=\"{$image_row[imageid]}\" id=\"{$image_row[imageid]}\" /></a>\n";
-					
-					}
-					
-					echo "</div>";
-								
-?>-->
 
 <!-- This <div> is for Picassa slideshow -->
 <div style="float:right; padding-left: 9px; padding-right: 35px; padding-bottom: 15px">
