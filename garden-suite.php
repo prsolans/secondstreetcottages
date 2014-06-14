@@ -109,7 +109,7 @@ Beautifully decorated with period furnishings and fine quality linens. And a gre
 </td>
 <td width="15px"></td>
 <td style="padding-right: 35px;">To request a reservation, please fill out the form on our <a href="availability.php">suite availability</a> page. 
-If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> and <a href="hideaway-suite.php">Hideaway Suite</a> for availability.
+If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 <div class="notice">Dates shown in white are still available!</div></td>
 </tr>
 </table>
