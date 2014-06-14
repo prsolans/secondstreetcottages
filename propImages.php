@@ -1,5 +1,5 @@
 <?php
-require_once("../master/config/config.php");
+//require_once("../master/config/config.php");
 ?>
 <?php
 // This page below get's a little hairy
