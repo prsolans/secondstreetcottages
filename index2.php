@@ -1,12 +1,12 @@
 <?php
-require_once($docroot . "master/config/config.php");
+require_once("master/config/config.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Second Street Cottages, Act 2 - Ashland, OR lodging and accomodations</title>
 <?php
-include($docroot . "master/includes/meta.inc.php");
+include("master/includes/meta.inc.php");
 ?>
 <script type="text/javascript" src="../master/javascript/thickbox/jquery.js"></script>
 <script type="text/javascript" src="../master/javascript/thickbox/thickbox.js"></script>

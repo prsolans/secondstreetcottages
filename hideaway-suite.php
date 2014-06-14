@@ -1,12 +1,12 @@
 <?php
-//require_once($docroot . "master/config/config.php");
+//require_once("master/config/config.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Hideaway Suite - Ashland, OR</title>
 <?php
-include($docroot . "master/includes/meta.inc.php");
+include("master/includes/meta.inc.php");
 ?>
 
 <!-- Code for Picassa slideshow -->

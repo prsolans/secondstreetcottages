@@ -15,17 +15,17 @@ if ($_SESSION['controller'] == true) {
 <link rel="stylesheet" href="../master/css/admin.css" type="text/css" media="screen" />
 
 <?php
-include($docroot . "/master/includes/meta.inc.php");
+include("/master/includes/meta.inc.php");
 ?>
 </head>
 <body id="adminbody">
 <?php
 // include administration header
-include($docroot . "/master/includes/header.admin.inc.php");
+include("/master/includes/header.admin.inc.php");
 ?>
 <?php
 // include administration left navigation
-include($docroot . "/master/includes/leftnav.admin.inc.php");
+include("/master/includes/leftnav.admin.inc.php");
 ?>
 <div id="adminrightcolumn">
 <h1>Image Reviewer</h1>
