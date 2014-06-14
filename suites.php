@@ -21,7 +21,7 @@ include("master/includes/meta.inc.php");
           <?php include("master/includes/leftmenu.frontend.php") ?>
         </div>
       </div>
-      <div class="main-right"> <img src="images/hd_suite.jpg" alt="Our Suites - Second Street Cottages, Ashland, OR" />
+      <div class="main-right"> <img src="images/hd_suites.jpg" alt="Our Suites - Second Street Cottages, Ashland, OR" />
        
         <h1 style="padding-top: 13px"><img src="images/imgs_heritage.jpg" align="right" /><A href="heritage-suite.php">Heritage Suite</A></h1>
         The Heritage Suite is a charming four bedroom cottage with three full bathrooms that can accommodate up to eight people.
