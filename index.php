@@ -6,10 +6,10 @@
 <head>
 <title>Second Street Cottages, Act 2 - Ashland, OR lodging and accomodations</title>
 <?php
-include($docroot . "master/includes/meta.inc.php");
+include("master/includes/meta.inc.php");
 ?>
-<script type="text/javascript" src="../master/javascript/thickbox/jquery.js"></script>
-<script type="text/javascript" src="../master/javascript/thickbox/thickbox.js"></script>
+<script type="text/javascript" src="master/javascript/thickbox/jquery.js"></script>
+<script type="text/javascript" src="master/javascript/thickbox/thickbox.js"></script>
 <script src="http://www.google.com/jsapi/?key=ABQIAAAAiDNXDIRiFG2T0EKbxQYLDxT-gtFcaj4RlOGhXYmRUZ6oeAxBShSG7OEk0lbUNx2QwDKJ0GIoAPxvQA"
       type="text/javascript"></script>
 <script src="http://www.google.com/uds/solutions/slideshow/gfslideshow.js"
