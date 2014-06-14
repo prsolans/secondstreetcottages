@@ -89,10 +89,10 @@ function myTransitionHandler8(entry, transitionTime) {
 <p>Hideaway Suite has a living room and dining area, fully-equipped kitchen, TV, DVD,  private washer/dryer, central air, off-street parking and an outdoor deck. </p>
 
         <?
-error_reporting (E_ALL ^ E_NOTICE);
-extract($HTTP_POST_VARS);
-extract($HTTP_GET_VARS);
-include '/homepages/30/d162063315/htdocs/secondstreet/master/cal/cl_files/calendar.php';
+//error_reporting (E_ALL ^ E_NOTICE);
+//extract($HTTP_POST_VARS);
+//extract($HTTP_GET_VARS);
+//include '/homepages/30/d162063315/htdocs/secondstreet/master/cal/cl_files/calendar.php';
 ?>
         <table>
           <tr>
