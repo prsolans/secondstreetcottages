@@ -41,7 +41,7 @@ include("master/includes/meta.inc.php");
 	<?php include("master/includes/leftmenu.frontend.php") ?>
 	  </div></div>
       
-      <div class="main-right"> <img src="images/hd_Hideaway-suite.png" alt="Hideaway Suite - Second Street Cottages, Ashland, OR" />
+      <div class="main-right"> <img src="images/hd-hideaway-suite.png" alt="Hideaway Suite - Second Street Cottages, Ashland, OR" />
       
       
 <!-- This <div> is for Picassa slideshow -->
