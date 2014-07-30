@@ -1,6 +1,3 @@
-<?php
-//require_once("master/config/config.php");
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,8 +5,6 @@
 <?php
 include("master/includes/meta.inc.php");
 ?>
-
-
 
 <!-- Code for Picassa slideshow -->
 <script src="http://www.google.com/jsapi/?key=ABQIAAAAiDNXDIRiFG2T0EKbxQYLDxT-gtFcaj4RlOGhXYmRUZ6oeAxBShSG7OEk0lbUNx2QwDKJ0GIoAPxvQA"
@@ -93,21 +88,14 @@ Garden Suite offers quiet, style and comfort. It has two bedrooms, each with its
 <p>
 Garden Suite has a <strong>living/dining room</strong>, fully equipped kitchen, TV, DVD, private washer/dryer, central air, off-street parking and an outdoor deck.  
 </p>
-<!--<p>
-Beautifully decorated with period furnishings and fine quality linens. And a great location – a short two-block walk to Oregon Shakespeare Festival theaters and downtown Ashland.
-</p>-->	 <?
-//error_reporting (E_ALL ^ E_NOTICE);
-//extract($HTTP_POST_VARS);
-//extract($HTTP_GET_VARS);
-//include '/homepages/30/d162063315/htdocs/secondstreet/master/cal/cl_files/calendar.php';
-?>
+
 <table>
 <tr>
 <td>
 <h1 style="margin-top: -25px">Availability</h1>
 <div id="_vrbo_cal_widget_402580">
 <div id="_vrbo_cal_link_402580">
-<a href="http://www.vrbo.com/402580/calendar?cid=AM_widget_calendarwidget-viewdates_widget_T_LCAL" target="_blank" rel="nofollow">View all dates</a></div>
+<a href="http://www.vrbo.com/402580" target="_blank" rel="nofollow">View all dates</a></div>
 <script type="text/javascript">
 var _vrbo_widget = "true";
 var _vrbo_base_url = "http://www.vrbo.com";
@@ -120,7 +108,7 @@ var _vrbo_bg_color = "#E5DAAD";
 
 </td>
 <td width="15px"></td>
-<td style="padding-right: 35px;">To request a reservation, please fill out the form on our <a href="availability.php">suite availability</a> page. 
+<td style="padding-right: 35px;">To request a reservation, please fill out the form on our <a href="http://www.vrbo.com/402580" target="_blank" >suite availability</a> page. 
 If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 <div class="notice">Dates shown in white are still available!</div></td>
 </tr>
