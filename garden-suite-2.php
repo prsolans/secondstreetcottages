@@ -108,7 +108,7 @@ var _vrbo_bg_color = "#E5DAAD";
 
 </td>
 <td width="15px"></td>
-<td style="padding-right: 35px;">To request a reservation, please fill out the form on our <a href="http://www.vrbo.com/402580" target="_blank" >suite availability</a> page. 
+<td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/402580" target="_blank">visit our page on VRBO</a>. 
 If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 <div class="notice">Dates shown in white are still available!</div></td>
 </tr>
