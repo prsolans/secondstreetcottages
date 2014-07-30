@@ -107,16 +107,14 @@ Beautifully decorated with period furnishings and fine quality linens. And a gre
 <h1 style="margin-top: -25px">Availability</h1>
 <div id="_vrbo_cal_widget_402580">
 <div id="_vrbo_cal_link_402580">
-
+<a href="http://www.vrbo.com/402580/calendar?cid=AM_widget_calendarwidget-viewdates_widget_T_LCAL" target="_blank" rel="nofollow">View all dates</a></div>
 <script type="text/javascript">
 var _vrbo_widget = "true";
 var _vrbo_base_url = "http://www.vrbo.com";
 var _vrbo_listing_id = 402580;
 var _vrbo_months = 1;
 var _vrbo_orientation = "vertical";
-var _vrbo_bg_color = "none";
-
-
+var _vrbo_bg_color = "#E5DAAD";
 </script>
 <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script></div>
 
