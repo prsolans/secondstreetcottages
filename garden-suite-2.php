@@ -11,14 +11,6 @@ include("master/includes/meta.inc.php");
       type="text/javascript"></script>
 <script src="http://www.google.com/uds/solutions/slideshow/gfslideshow.js"
       type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $('#prs_vrbo').css('border', '15px solid red');
-  });
-
-</script>
 <style type="text/css">
 .notice {
 
@@ -100,13 +92,13 @@ Garden Suite has a <strong>living/dining room</strong>, fully equipped kitchen, 
 <tr>
 <td>
 <h1 style="margin-top: -25px">Availability</h1>
-<div id="_vrbo_cal_widget_402580">
-<div id="_vrbo_cal_link_402580">
-<a href="http://www.vrbo.com/402580" target="_blank" rel="nofollow">View all dates</a></div>
+<div id="_vrbo_cal_widget_610049">
+<div id="_vrbo_cal_link_610049">
+<a href="http://www.vrbo.com/610049" target="_blank" rel="nofollow">View all dates</a></div>
 <script type="text/javascript">
 var _vrbo_widget = "true";
 var _vrbo_base_url = "http://www.vrbo.com";
-var _vrbo_listing_id = 402580;
+var _vrbo_listing_id = 610049;
 var _vrbo_months = 1;
 var _vrbo_orientation = "vertical";
 var _vrbo_bg_color = "#E5DAAD";
@@ -115,7 +107,7 @@ var _vrbo_bg_color = "#E5DAAD";
 
 </td>
 <td width="15px"></td>
-<td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/402580" target="_blank">visit our page on VRBO</a>. 
+<td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
 If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 <div class="notice">Dates shown in white are still available!</div></td>
 </tr>
@@ -125,9 +117,6 @@ If you don't see the dates you are looking for, check out our <a href="heritage-
 	
 </div>
 </div>
-
-<iframe src="http://www.vrbo.com/402580" id="prs_vrbo"></iframe>
-
 
 </body>
 </html>
