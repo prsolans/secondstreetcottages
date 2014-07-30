@@ -106,14 +106,17 @@ Beautifully decorated with period furnishings and fine quality linens. And a gre
 <td>
 <h1 style="margin-top: -25px">Availability</h1>
 <div id="_vrbo_cal_widget_402580">
+<div id="_vrbo_cal_link_402580">
 
 <script type="text/javascript">
 var _vrbo_widget = "true";
 var _vrbo_base_url = "http://www.vrbo.com";
 var _vrbo_listing_id = 402580;
 var _vrbo_months = 1;
-var _vrbo_orientation = "horizontal";
+var _vrbo_orientation = "vertical";
 var _vrbo_bg_color = "none";
+
+
 </script>
 <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script></div>
 
