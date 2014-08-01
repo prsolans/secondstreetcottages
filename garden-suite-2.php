@@ -118,7 +118,6 @@ If you don't see the dates you are looking for, check out our <a href="heritage-
 </div>
 </div>
 
-<iframe src="http://www.vrbo.com/402580" id="prs_vrbo" style="width: 960px;"></iframe>
 
 </body>
 </html>
