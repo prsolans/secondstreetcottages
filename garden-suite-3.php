@@ -98,6 +98,10 @@ Garden Suite has a <strong>living/dining room</strong>, fully equipped kitchen, 
 </p>
 
 <table>
+<tr><td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
+If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
+</td>
+</tr>
 <tr>
 <td>
 <h1 style="margin-top: -25px">Availability</h1>
@@ -115,9 +119,6 @@ var _vrbo_bg_color = "#E5DAAD";
 <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script></div>
 
 </td>
-</tr><tr><td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
-If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
-<div class="notice">Dates shown in white are still available!</div></td>
 </tr>
 </table>
 </div>
