@@ -13,12 +13,6 @@ include("master/includes/meta.inc.php");
       type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-    $('#prs_vrbo').css('border', '15px solid red');
-  });
-
-</script>
 <style type="text/css">
 .notice {
 
@@ -38,7 +32,7 @@ include("master/includes/meta.inc.php");
 <div class="container">
 	<div class="header">
 	<?php include("master/includes/header.frontend.php") ?></div>
-	<div class="main" style="height: 700px;">
+	<div class="main" style="height: 800px;">
 	<div class="main-left"><img src="images/img_flower_mirror.jpg" alt="Ashland, OR cottage" />
 	<div class="main-left-menu">
 	<?php include("master/includes/leftmenu.frontend.php") ?>
@@ -97,9 +91,6 @@ Garden Suite offers quiet, style and comfort. It has two bedrooms, each with its
 Garden Suite has a <strong>living/dining room</strong>, fully equipped kitchen, TV, DVD, private washer/dryer, central air, off-street parking and an outdoor deck.  
 </p>
 <h1>Availability</h1>
-<p>
-To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
-If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 
 <div id="_vrbo_cal_widget_610049">
 <div id="_vrbo_cal_link_610049">
@@ -113,6 +104,9 @@ var _vrbo_orientation = "horizontal";
 var _vrbo_bg_color = "#E5DAAD";
 </script>
 <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script></div>
+<p>
+To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
+If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 
 </div>
     </div><div class="footer"><?php include("master/includes/footer.frontend.php") ?></div>

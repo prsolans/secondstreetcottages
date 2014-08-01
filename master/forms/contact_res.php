@@ -24,7 +24,7 @@ $departs = $_POST['departs'];
 	$smailbody.="\n-------------------------------------------------------\n";
 	$smailbody.="\n".$author;
 	$smailheaders="From: webform@secondstreetcottages.com";
-	mail($visitorEmail, $thankyousubject, $smailbody, $smailheaders);
+//	mail($visitorEmail, $thankyousubject, $smailbody, $smailheaders);
 	
 
 
@@ -54,11 +54,11 @@ $body.= "<hr>";
   $body.= "<br>".$comments."";
 
 // set recipient for emails
-$email2 = "ken@aqueductdevelopment.com";
+//$email2 = "ken@aqueductdevelopment.com";
 $email = "kreichert@ameritech.net";
-$email3 = "innkeeper@ashlandsblackswaninn.com";
+$email3 = "secondstreetcottages@gmail.com";
 
-mail($email2,$subject,$body,$headers);
+//mail($email2,$subject,$body,$headers);
 mail($email3,$subject,$body,$headers);
 
 $success = mail($email,$subject,$body,$headers);

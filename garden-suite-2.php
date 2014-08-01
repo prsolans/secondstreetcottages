@@ -29,7 +29,7 @@ include("master/includes/meta.inc.php");
 <div class="container">
 	<div class="header">
 	<?php include("master/includes/header.frontend.php") ?></div>
-	<div class="main" style="height: 700px;">
+	<div class="main" style="height: 800px;">
 	<div class="main-left"><img src="images/img_flower_mirror.jpg" alt="Ashland, OR cottage" />
 	<div class="main-left-menu">
 	<?php include("master/includes/leftmenu.frontend.php") ?>

@@ -7,7 +7,7 @@ body {
 /*font-family: "Garamond", "Georgia", "Palatino", serif;*/
 color: #FFFFFF;
 /*font-weight:bold;*/
-font-size: 14pt;
+font-size: 12pt;
 background-image:url(../../images/page_tanback.gif);
 
 }
@@ -32,7 +32,7 @@ z-index: 11;
 
 .main {
 width: 930px;
-height: 700px;
+height: 850px;
 text-align: left;
 background-image:url(../../images/body-bg.gif);
 background-repeat:repeat-y;
@@ -40,7 +40,8 @@ padding: 21px 21px 7px 29px;
 }
 
 .main p{
-font-size: 14pt;
+font-size: 13pt;
+line-height: 1.3em;
 padding-bottom: 15px;
 }
 
