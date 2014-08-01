@@ -30,6 +30,7 @@ include("master/includes/meta.inc.php");
 	text-align: center;
 }
 </style>
+<link rel=stylesheet href="master/css/main.css">
 </head>
 
 <body>
@@ -114,8 +115,7 @@ var _vrbo_bg_color = "#E5DAAD";
 <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script></div>
 
 </td>
-<td width="15px"></td>
-<td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
+</tr><tr><td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
 If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
 <div class="notice">Dates shown in white are still available!</div></td>
 </tr>
