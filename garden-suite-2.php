@@ -11,14 +11,6 @@ include("master/includes/meta.inc.php");
       type="text/javascript"></script>
 <script src="http://www.google.com/uds/solutions/slideshow/gfslideshow.js"
       type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $('#prs_vrbo').css('border', '15px solid red');
-  });
-
-</script>
 <style type="text/css">
 .notice {
 
@@ -127,7 +119,6 @@ If you don't see the dates you are looking for, check out our <a href="heritage-
 </div>
 
 <iframe src="http://www.vrbo.com/402580" id="prs_vrbo" style="width: 960px;"></iframe>
-
 
 </body>
 </html>
