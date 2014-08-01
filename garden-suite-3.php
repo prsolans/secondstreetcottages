@@ -96,15 +96,11 @@ Garden Suite offers quiet, style and comfort. It has two bedrooms, each with its
 <p>
 Garden Suite has a <strong>living/dining room</strong>, fully equipped kitchen, TV, DVD, private washer/dryer, central air, off-street parking and an outdoor deck.  
 </p>
-
-<table>
-<tr><td style="padding-right: 35px;">To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
+<h1>Availability</h1>
+<p>
+To request a reservation or for additional details, <a href="http://www.vrbo.com/610049" target="_blank">visit our page on VRBO</a>. 
 If you don't see the dates you are looking for, check out our <a href="heritage-suite.php">Heritage Suite</a> for availability.
-</td>
-</tr>
-<tr>
-<td>
-<h1 style="margin-top: -25px">Availability</h1>
+
 <div id="_vrbo_cal_widget_610049">
 <div id="_vrbo_cal_link_610049">
 <a href="http://www.vrbo.com/610049" target="_blank" rel="nofollow">View all dates</a></div>
@@ -118,9 +114,6 @@ var _vrbo_bg_color = "#E5DAAD";
 </script>
 <script type="text/javascript" src="http://www.vrbo.com/resources/current/scripts/calendarwidget.js"></script></div>
 
-</td>
-</tr>
-</table>
 </div>
     </div><div class="footer"><?php include("master/includes/footer.frontend.php") ?></div>
 	
