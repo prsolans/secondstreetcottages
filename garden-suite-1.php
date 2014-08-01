@@ -107,7 +107,7 @@ Garden Suite has a <strong>living/dining room</strong>, fully equipped kitchen, 
 var _vrbo_widget = "true";
 var _vrbo_base_url = "http://www.vrbo.com";
 var _vrbo_listing_id = 610049;
-var _vrbo_months = 2;
+var _vrbo_months = 1;
 var _vrbo_orientation = "vertical";
 var _vrbo_bg_color = "#E5DAAD";
 </script>
